@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core'
@@ -11,7 +11,7 @@ const theme = createMuiTheme({
      main: "#d48c34"
     },
     secondary: {
-      main: "#353130"
+        main: "#353130"
     }
   }
 })
