@@ -54,8 +54,8 @@ export default function Home(props) {
          animate={{opacity: 1}}
          transition={{delay: 4, duration: 1}}>
         <Row className="justify-content-center home-buttons">
-          <Link to='/resume'>
-            <Button variant="outline-dark" style={{marginLeft: 20, marginRight: 20}}size="lg">Resume</Button>
+          <Link to='/about'>
+            <Button variant="outline-dark" style={{marginLeft: 20, marginRight: 20}}size="lg">About Me</Button>
           </Link>
           <Link to='/projects'>
             <Button variant="outline-dark" style={{marginLeft: 20, marginRight: 20}}size="lg">Projects</Button>

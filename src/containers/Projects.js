@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
     const [modalShow, setModalShow] = useState(true);
@@ -24,7 +25,9 @@ export default function Projects() {
                 This is where I will tell you about me.
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-dark" onClick={handleClick}>Back</Button>
+                <Link to="/">
+                    <Button variant="outline-dark" onClick={handleClick}>Back</Button>
+                </Link>
             </Modal.Footer>
         </Modal>
     ) 

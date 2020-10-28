@@ -1,8 +1,8 @@
+import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-
-const Contact = () => {
+export default function Contact() {
     const [modalShow, setModalShow] = useState(true);
 
     const handleClick = () => {
@@ -25,10 +25,10 @@ const Contact = () => {
                 This is where I will tell you about me.
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-dark" onClick={handleClick}>Back</Button>
+                <Link to="/">
+                    <Button variant="outline-dark" onClick={handleClick}>Back</Button>
+                </Link>
             </Modal.Footer>
         </Modal>
     ) 
 }
-
-export default Contact;
