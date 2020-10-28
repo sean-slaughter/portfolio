@@ -1,30 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 
 body {
-  background-color: #202326;
-  color: #fbfbfb;
-  display: "grid";
-  font-family: 'Bebas Neue', cursive;
+  background-color: #1c1e20 !important;
+  color: #fbfbfb !important;
+  font-family: 'Economica', sans-serif !important;
 }
 
 .home-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    margin-top: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
-.profile-pic{
-  max-width: 25rem;
-  border-radius: 5%;
+.home-image{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .home-text{
-  font-size: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  font-size: 4rem;
 }
 
+.pic-button{
+  position: absolute !important;
+  text-align: center !important;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
 
