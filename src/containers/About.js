@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Image, Modal, Row } from 'react-bootstrap'
+import { Button, Col, Image, Modal, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { FaGithub, FaMedium, FaLinkedin } from 'react-icons/fa'
 export default function About() {
@@ -8,7 +8,6 @@ export default function About() {
     const handleClick = () => {
         setModalShow(false)
     }
-
     return (
         <Modal
         show={modalShow}
@@ -39,10 +38,26 @@ export default function About() {
                     MY DOGS:
                 </p>
                 <Row className="justify-content-center">
-                    <Image src="/nina.jpg" width={400} rounded/>
+                    <Col xs={6}>
+                        <Image src="/nina2.JPG"rounded fluid/>
+                    </Col>
+                    <Col xs={6}>
+                        <Image src="/nina.jpg" rounded fluid/>
+                    </Col>
                 </Row>
-                <p className="modal-text text-center" style={{marginTop: 30}}>
+                <p className="modal-text text-center" style={{marginTop: 30, marginBottom: 30}}>
                     This is Nina. She enjoys balls, tasty food, and carpeted areas. She is terrified of hardwood floors and spends most days sleeping.
+                </p>
+                <Row className="justify-content-center">
+                    <Col xs={6}>
+                        <Image src="/luna2.jpg"rounded fluid/>
+                    </Col>
+                    <Col xs={6}>
+                        <Image src="/luna1.jpeg" rounded fluid/>
+                    </Col>
+                </Row>
+                <p className="modal-text text-center" style={{marginTop: 30, marginBottom: 30}}>
+                    This is Luna. She enjoys stealing balls from Nina, chewing bones, and trying to bury dog food in the bed. She sleeps with one eye open and trusts no one.
                 </p>
             </Modal.Body>
             <Modal.Footer>
