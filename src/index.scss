@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 
 body {
-  background-color: #1c1e20 !important;
-  color: #fbfbfb !important;
+  background-color: #eaeaea!important;
+  color: #2e1c2b !important;
   font-family: 'Economica', sans-serif !important;
 }
 
 .home-container{
+    padding: 50px;
     position: relative;
     margin-top: 150px;
    display: flex;
@@ -21,7 +22,10 @@ body {
 }
 
 .home-text{
-  font-size: 4rem;
+  font-size: 3rem;
+}
+.home-description{
+  font-size: 2rem;
 }
 
 .pic-button{
