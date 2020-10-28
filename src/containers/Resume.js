@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 
 export default function Projects() {
     const [modalShow, setModalShow] = useState(true);

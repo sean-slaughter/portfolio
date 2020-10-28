@@ -1,13 +1,15 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import HomeImage from "../components/HomeImage";
+import { Link } from "react-router-dom";
 
 export default function Home(props) {
   return (
+      <Container>
         <motion.div exit={{x: -2000}} key="home"transition={{ease: "easeInEaseOut"}} className="home-container">
             <motion.p
-            class="home-text text-center"
+            class="row home-text text-center"
             initial={{ x: "-200vw" }}
             animate={{ x: 0 }}
             transition={{ delay: 0.6, type: "spring", damping: 15 }}
@@ -29,7 +31,7 @@ export default function Home(props) {
             animate={{opacity: 1}}
             transition={{delay: 2.6, duration: 1}}
             > 
-            Some of my favorite current technologies include Java, ReactJS, Rails, PostgreSQL, and MongoDB.
+            Some of my current favorite technologies include Java, ReactJS, Rails, PostgreSQL, and MongoDB.
             </motion.p>
             <motion.p
             className="home-description text-center"
@@ -40,6 +42,22 @@ export default function Home(props) {
             Lets connect and create something great together!
             </motion.p>
         </motion.div>
-      
+        <motion.div
+         initial={{opacity: 0}}
+         animate={{opacity: 1}}
+         transition={{delay: 3.3, duration: 1}}>
+        <Row className="justify-content-center home-buttons">
+          <Link to='/resume'>
+            <Button variant="outline-dark" style={{margin: 20}}size="lg">Resume</Button>
+          </Link>
+          <Link to='/projects'>
+            <Button variant="outline-dark" style={{margin: 20}}size="lg">Projects</Button>
+          </Link>
+          <Link to='/contact'>
+            <Button variant="outline-dark" style={{margin: 20}}size="lg">Contact</Button>
+          </Link>
+        </Row>
+        </motion.div>
+      </Container>
   );
 }

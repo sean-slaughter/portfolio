@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import React, { useState } from 'react';
 
-export default function Projects() {
+
+const Contact = () => {
     const [modalShow, setModalShow] = useState(true);
 
     const handleClick = () => {
@@ -29,3 +30,5 @@ export default function Projects() {
         </Modal>
     ) 
 }
+
+export default Contact;
