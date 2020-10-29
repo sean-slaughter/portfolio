@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaMedium,
-  FaLinkedin,
   FaYoutube,
   FaYelp,
-  FaReact,
 } from "react-icons/fa";
 import {
   SiRails,
-  SiRedux,
   SiMaterialUi,
   SiJavascript,
   SiPostgresql,
@@ -44,7 +41,9 @@ export default function Projects() {
               <Card.Body className="text-center">
                 <Card.Text style={{ fontSize: 25, color: "white" }}>
                   Jitter is a Ruby on Rails application that allows users to
-                  search by city for top rated coffee shops. <br />
+                  search by city for top rated coffee shops. I built this app because I love finding new places
+                  to satisfy my caffeine problem.
+                  <br />
                   <br />
                 </Card.Text>
                 <Card.Text style={{ fontSize: 25, color: "white" }}>
@@ -103,7 +102,8 @@ export default function Projects() {
               <Card.Body className="text-center">
                 <Card.Text style={{ fontSize: 25, color: "white" }}>
                   A simulation of John Conway's game of life, created with
-                  ReactJS.
+                  ReactJS. I built this because I was fascinated at the life like patterns that
+                  can be created with a simple set of rules. This was really fun to program. 
                   <br />
                   <br />
                 </Card.Text>
@@ -162,7 +162,8 @@ export default function Projects() {
               <Card.Img variant="top" src="rendezvous.png" />
               <Card.Body className="text-center">
                 <Card.Text style={{ fontSize: 25, color: "white" }}>
-                  Rendezvous is an appointment booking platfrom written in Ruby.
+                  Rendezvous is an appointment booking platfrom written in Ruby. I built this
+                  because my partner is an esthetician and needed an app to help manage her clients.
                   <br />
                   <br />
                 </Card.Text>
@@ -222,7 +223,8 @@ export default function Projects() {
               <Card.Img variant="top" src="petes-za.png" />
               <Card.Body className="text-center">
                 <Card.Text style={{ fontSize: 25, color: "white" }}>
-                  Sample restaurant ordering system written in VanillaJS
+                  Sample restaurant ordering system written in VanillaJS. I built this to practice
+                  making fetch calls to render JSON in a single page application.
                   <br />
                   <br />
                 </Card.Text>
