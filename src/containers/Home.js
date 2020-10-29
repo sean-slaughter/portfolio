@@ -60,7 +60,7 @@ export default function Home(props) {
           <Link to='/projects'>
             <Button variant="outline-dark" style={{marginLeft: 20, marginRight: 20}}size="lg">Projects</Button>
           </Link>
-          <Link to='/contact'>
+          <Link to='mailto:sthompson2822@gmail.com'>
             <Button variant="outline-dark" style={{marginLeft: 20, marginRight: 20}}size="lg">Contact</Button>
           </Link>
         </Row>
