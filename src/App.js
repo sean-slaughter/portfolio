@@ -12,14 +12,12 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <AnimatePresence exitBeforeEnter>
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
           <Route path="/" component={Home} />
         </Switch>
-      </AnimatePresence>
     </div>
   );
 }
