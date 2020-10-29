@@ -117,7 +117,7 @@ export default function Projects() {
                       <SiMaterialUi size={35} /> <br /> MaterialUI
                     </li>
                     <li>
-                      <FaYelp size={30} /> <br /> Yelp Fusion API
+                      <SiPostgresql size={30} /> <br /> PostgreSQL
                     </li>
                   </ul>
                 </Card.Text>
