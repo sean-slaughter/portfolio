@@ -1,9 +1,11 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 
-export default function Project() {
+export default function Project(props) {
     return (
-        <div>
-            
-        </div>
+        <Card bg="dark">
+
+
+        </Card>
     )
 }
