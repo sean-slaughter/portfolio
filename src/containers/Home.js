@@ -16,7 +16,7 @@ export default function Home(props) {
               <Image src="resume.jpeg" roundedCircle width={225}/>
             </motion.div>
             <motion.p
-            class="row home-text text-center"
+            className="home-text text-center"
             initial={{ x: "-200vw" }}
             animate={{ x: 0 }}
             transition={{ delay: 0.6, type: "spring", damping: 15 }}
