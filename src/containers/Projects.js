@@ -31,7 +31,7 @@ export default function Projects() {
       centered
     >
       <Modal.Header>
-        <Modal.Title id="contained-modal-title-vcenter">Projects</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Projects (please note that live apps are deployed on Heroku and there may be a short wait when loading them)</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Row>
