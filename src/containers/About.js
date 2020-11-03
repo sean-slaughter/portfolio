@@ -10,6 +10,19 @@ export default function About() {
   const handleClick = () => {
     setModalShow(false);
   };
+
+  const handleClickGH = () => {
+    window.open("https://github.com/sean-slaughter/")
+  }
+
+  const handleClickMedium = () => {
+    window.open("https://seanslaughterthompson.medium.com/")
+  }
+
+  const handleClickLI = () => {
+    window.open("https://www.linkedin.com/in/seanslaughterthompson/")
+  }
+
   return (
     <Modal
       show={modalShow}
@@ -22,16 +35,16 @@ export default function About() {
       </Modal.Header>
       <Modal.Body>
         <p className="modal-text">
-          I'm currently studying at the University of Wisconsin Milwaukee,
-          spending way too much time on my computer, and playing music with any
-          free time that I have.
+          I'm currently studying at the University of Wisconsin Milwaukee.
+          When I'm not spending my time coding or learning, I am either playing music or riding my bike.
+          In all honestly though...I'm spending most of my time coding.
         </p>
         <p className="modal-text">
          
         </p>
         <Row className="justify-content-center">
-          <Link to="https://github.com/sean-slaughter">
             <Button
+              onClick={handleClickGH}
               variant="outline-dark"
               style={{ margin: 20 }}
             >
@@ -39,9 +52,8 @@ export default function About() {
               <br />
               <FaGithub size={50} />
             </Button>
-          </Link>
-          <Link to="https://medium.com/@seanslaughterthompson">
             <Button
+              onClick={handleClickMedium}
               variant="outline-dark"
               style={{ margin: 20 }}
             >
@@ -49,9 +61,8 @@ export default function About() {
               <br />
               <FaMedium size={50} />
             </Button>
-          </Link>
-          <Link to="https://linkedin.com/in/seanslaughterthompson">
             <Button
+              onClick={handleClickLI}
               variant="outline-dark"
               style={{ margin: 20 }}
             >
@@ -59,7 +70,6 @@ export default function About() {
               <br />
               <FaLinkedin size={50} />
             </Button>
-          </Link>
         </Row>
     
       </Modal.Body>
