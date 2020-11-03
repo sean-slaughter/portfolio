@@ -30,33 +30,36 @@ export default function About() {
          
         </p>
         <Row className="justify-content-center">
-          <Button
-            variant="outline-dark"
-            style={{ margin: 20 }}
-            href="https://github.com/sean-slaughter"
-          >
-            My Code:
-            <br />
-            <FaGithub size={50} />
-          </Button>
-          <Button
-            variant="outline-dark"
-            style={{ margin: 20 }}
-            href="https://medium.com/@seanslaughterthompson"
-          >
-            My Blog:
-            <br />
-            <FaMedium size={50} />
-          </Button>
-          <Button
-            variant="outline-dark"
-            style={{ margin: 20 }}
-            href="https://linkedin.com/in/seanslaughterthompson"
-          >
-            My Network:
-            <br />
-            <FaLinkedin size={50} />
-          </Button>
+          <Link to="https://github.com/sean-slaughter">
+            <Button
+              variant="outline-dark"
+              style={{ margin: 20 }}
+            >
+              My Code:
+              <br />
+              <FaGithub size={50} />
+            </Button>
+          </Link>
+          <Link to="https://medium.com/@seanslaughterthompson">
+            <Button
+              variant="outline-dark"
+              style={{ margin: 20 }}
+            >
+              My Blog:
+              <br />
+              <FaMedium size={50} />
+            </Button>
+          </Link>
+          <Link to="https://linkedin.com/in/seanslaughterthompson">
+            <Button
+              variant="outline-dark"
+              style={{ margin: 20 }}
+            >
+              My Network:
+              <br />
+              <FaLinkedin size={50} />
+            </Button>
+          </Link>
         </Row>
     
       </Modal.Body>
